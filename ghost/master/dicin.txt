@@ -19,22 +19,14 @@
 
 ＊キャラ追加処理2
 ＄キャラクター（zen2han,（キャラ番号））	（キャラ名仮）
-（nop,（copy,..\..\..\0.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））0.png）
-（copy,..\..\..\1.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））1.png）
-（copy,..\..\..\2.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））2.png）
-（copy,..\..\..\3.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））3.png）
-（copy,..\..\..\4.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））4.png）
-（copy,..\..\..\5.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））5.png）
-（copy,..\..\..\6.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））6.png）
-（copy,..\..\..\7.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））7.png）
-（delete,..\..\..\0.png）
-（delete,..\..\..\1.png）
-（delete,..\..\..\2.png）
-（delete,..\..\..\3.png）
-（delete,..\..\..\4.png）
-（delete,..\..\..\5.png）
-（delete,..\..\..\6.png）
-（delete,..\..\..\7.png）
+（nop,（rename,..\..\..\0.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））0.png）
+（rename,..\..\..\1.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））1.png）
+（rename,..\..\..\2.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））2.png）
+（rename,..\..\..\3.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））3.png）
+（rename,..\..\..\4.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））4.png）
+（rename,..\..\..\5.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））5.png）
+（rename,..\..\..\6.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））6.png）
+（rename,..\..\..\7.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））7.png）
 （edittext,surfaces.txt,Open））
 ＄引数区切り削除	,
 ＄引数区切り追加	■
@@ -55,45 +47,29 @@ animation0.pattern7,base,（zen2han■（キャラ番号））7,90,0,0\n
 ＄引数区切り削除	■
 ＄引数区切り追加	,
 （nop,（delete,..\..\..\shell\master\surfaces.txt）
-（copy,..\surfaces.txt,..\..\..\shell\master\surfaces.txt））
+（copy,..\surfaces.txt,..\..\..\shell\master\））
 ＄デフォルトサーフェス（zen2han,（キャラ番号））	（zen2han,（キャラ番号））0
 ＄キャラ番号＝（キャラ番号）＋２
 \![change,ghost,caramelldansen]
 
 ＊キャラ追加処理3
 ＄キャラクター（zen2han,（キャラ番号））	（キャラ名仮）
-（nop,（copy,..\..\..\0.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））0.png）
-（copy,..\..\..\1.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））1.png）
-（copy,..\..\..\2.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））2.png）
-（copy,..\..\..\3.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））3.png）
-（copy,..\..\..\4.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））4.png）
-（copy,..\..\..\5.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））5.png）
-（copy,..\..\..\6.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））6.png）
-（copy,..\..\..\7.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））7.png）
-（copy,..\..\..\8.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））8.png）
-（copy,..\..\..\9.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））9.png）
-（copy,..\..\..\10.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）0.png）
-（copy,..\..\..\11.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）1.png）
-（copy,..\..\..\12.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）2.png）
-（copy,..\..\..\13.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）3.png）
-（copy,..\..\..\14.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）4.png）
-（copy,..\..\..\15.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）5.png）
-（delete,..\..\..\0.png）
-（delete,..\..\..\1.png）
-（delete,..\..\..\2.png）
-（delete,..\..\..\3.png）
-（delete,..\..\..\4.png）
-（delete,..\..\..\5.png）
-（delete,..\..\..\6.png）
-（delete,..\..\..\7.png）
-（delete,..\..\..\8.png）
-（delete,..\..\..\9.png）
-（delete,..\..\..\10.png）
-（delete,..\..\..\11.png）
-（delete,..\..\..\12.png）
-（delete,..\..\..\13.png）
-（delete,..\..\..\14.png）
-（delete,..\..\..\15.png）
+（nop,（rename,..\..\..\0.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））0.png）
+（rename,..\..\..\1.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））1.png）
+（rename,..\..\..\2.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））2.png）
+（rename,..\..\..\3.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））3.png）
+（rename,..\..\..\4.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））4.png）
+（rename,..\..\..\5.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））5.png）
+（rename,..\..\..\6.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））6.png）
+（rename,..\..\..\7.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））7.png）
+（rename,..\..\..\8.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））8.png）
+（rename,..\..\..\9.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））9.png）
+（rename,..\..\..\10.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）0.png）
+（rename,..\..\..\11.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）1.png）
+（rename,..\..\..\12.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）2.png）
+（rename,..\..\..\13.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）3.png）
+（rename,..\..\..\14.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）4.png）
+（rename,..\..\..\15.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）5.png）
 （edittext,surfaces.txt,Open））
 ＄引数区切り削除	,
 ＄引数区切り追加	■
@@ -123,7 +99,7 @@ animation0.pattern7,base,（calc■（zen2han■（キャラ番号））+1）5,90,0,0\n
 ＄引数区切り削除	■
 ＄引数区切り追加	,
 （nop,（delete,..\..\..\shell\master\surfaces.txt）
-（copy,..\surfaces.txt,..\..\..\shell\master\surfaces.txt））
+（copy,..\surfaces.txt,..\..\..\shell\master\））
 ＄デフォルトサーフェス（zen2han,（キャラ番号））	（zen2han,（キャラ番号））0
 ＄キャラ番号＝（キャラ番号）＋２
 \![change,ghost,caramelldansen]

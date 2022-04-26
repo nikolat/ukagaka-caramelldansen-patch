@@ -31,10 +31,11 @@ calc_float,ssu.dll,calc_float
 calc,ssu.dll,calc
 choice,ssu.dll,choice
 Åîexist,hitori.dll,exist
-rename,hitori.dll,rename,
+Åîrename,hitori.dll,rename,
 Åîcopy,hitori.dll,copy
 Åîdelete,hitori.dll,delete
 edittext,edittext.dll
 yaya,yaya_saori/yaya.dll
-copy,yaya_saori/yaya.dll,FRENAME
+rename,yaya_saori/yaya.dll,FRENAME
+copy,yaya_saori/yaya.dll,FCOPY
 delete,yaya_saori/yaya.dll,FDEL
