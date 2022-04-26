@@ -1,0 +1,40 @@
+＊初期化
+＄喋り間隔	０秒
+＄喋り間隔誤差	０％
+＄会話時サーフェス戻し	無効
+＄デフォルトサーフェス0	0
+＄デフォルトサーフェス1	10
+＄キャラ番号	２
+＄キャラクター0	みい
+＄曲	umauma.mp3
+
+＠SAORI
+mciaudior,mciaudior.dll
+replace,ssu.dll,replace
+split,ssu.dll,split
+switch,ssu.dll,switch
+compare,ssu.dll,compare
+count,ssu.dll,count
+compare_tail,ssu.dll,compare_tail
+substr,ssu.dll,substr
+zen2han,ssu.dll,zen2han
+erase,ssu.dll,erase
+erase_first,ssu.dll,erase_first
+is_empty,ssu.dll,is_empty
+is_digit,ssu.dll,is_digit
+length,ssu.dll,length
+if,ssu.dll,if
+unless,ssu.dll,unless
+compare_head,ssu.dll,compare_head
+iflist,ssu.dll,iflist
+calc_float,ssu.dll,calc_float
+calc,ssu.dll,calc
+choice,ssu.dll,choice
+＃exist,hitori.dll,exist
+rename,hitori.dll,rename,
+＃copy,hitori.dll,copy
+＃delete,hitori.dll,delete
+edittext,edittext.dll
+yaya,yaya_saori/yaya.dll
+copy,yaya_saori/yaya.dll,FRENAME
+delete,yaya_saori/yaya.dll,FDEL

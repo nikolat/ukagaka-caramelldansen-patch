@@ -1,0 +1,4 @@
+charset,Shift_JIS
+type,supplement
+name,caramelldansen-patch
+accept,caramelldansen

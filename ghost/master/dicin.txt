@@ -1,0 +1,129 @@
+＊OnInstallComplete
+＞キャラ追加処理1	（Ｒ０）==supplement
+＞その他追加
+
+＊その他
+：ｳｯｳｰｳﾏｳﾏ
+
+＊キャラ追加処理1
+＄キャラ名仮	（Ｒ１）
+＞キャラ追加処理2	（call,exist,..\..\..\0.png）==1&&（call,exist,..\..\..\1.png）==1&&（call,exist,..\..\..\2.png）==1&&（call,exist,..\..\..\3.png）==1&&（call,exist,..\..\..\4.png）==1&&（call,exist,..\..\..\5.png）==1&&（call,exist,..\..\..\6.png）==1&&（call,exist,..\..\..\7.png）==1&&（call,exist,..\..\..\8.png）==0
+＞キャラ追加処理3	（call,exist,..\..\..\0.png）==1&&（call,exist,..\..\..\1.png）==1&&（call,exist,..\..\..\2.png）==1&&（call,exist,..\..\..\3.png）==1&&（call,exist,..\..\..\4.png）==1&&（call,exist,..\..\..\5.png）==1&&（call,exist,..\..\..\6.png）==1&&（call,exist,..\..\..\7.png）==1&&（call,exist,..\..\..\8.png）==1&&（call,exist,..\..\..\9.png）==1&&（call,exist,..\..\..\10.png）==1&&（call,exist,..\..\..\11.png）==1&&（call,exist,..\..\..\12.png）==1&&（call,exist,..\..\..\13.png）==1&&（call,exist,..\..\..\14.png）==1&&（call,exist,..\..\..\15.png）==1
+＞追加失敗
+
+＠exist
+（when、（yaya,FDIGEST,（A0）,MD5）==-1、0、1）
+
+＊追加失敗
+：バルサミコ酢やっぱいらへん？
+
+＊キャラ追加処理2
+＄キャラクター（zen2han,（キャラ番号））	（キャラ名仮）
+（nop,（copy,..\..\..\0.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））0.png）
+（copy,..\..\..\1.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））1.png）
+（copy,..\..\..\2.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））2.png）
+（copy,..\..\..\3.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））3.png）
+（copy,..\..\..\4.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））4.png）
+（copy,..\..\..\5.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））5.png）
+（copy,..\..\..\6.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））6.png）
+（copy,..\..\..\7.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））7.png）
+（delete,..\..\..\0.png）
+（delete,..\..\..\1.png）
+（delete,..\..\..\2.png）
+（delete,..\..\..\3.png）
+（delete,..\..\..\4.png）
+（delete,..\..\..\5.png）
+（delete,..\..\..\6.png）
+（delete,..\..\..\7.png）
+（edittext,surfaces.txt,Open））
+＄引数区切り削除	,
+＄引数区切り追加	■
+（nop■（edittext■surfaces.txt■Append■-1■surface（zen2han■（キャラ番号））0\n
+{\n
+animation0.interval,always\n
+animation0.pattern0,base,（zen2han■（キャラ番号））0,90,0,0\n
+animation0.pattern1,base,（zen2han■（キャラ番号））1,90,0,0\n
+animation0.pattern2,base,（zen2han■（キャラ番号））2,90,0,0\n
+animation0.pattern3,base,（zen2han■（キャラ番号））3,90,0,0\n
+animation0.pattern4,base,（zen2han■（キャラ番号））4,90,0,0\n
+animation0.pattern5,base,（zen2han■（キャラ番号））5,90,0,0\n
+animation0.pattern6,base,（zen2han■（キャラ番号））6,90,0,0\n
+animation0.pattern7,base,（zen2han■（キャラ番号））7,90,0,0\n
+}）
+（edittext■surfaces.txt■Save）
+（edittext■surfaces.txt■Close））
+＄引数区切り削除	■
+＄引数区切り追加	,
+（nop,（delete,..\..\..\shell\master\surfaces.txt）
+（copy,..\surfaces.txt,..\..\..\shell\master\surfaces.txt））
+＄デフォルトサーフェス（zen2han,（キャラ番号））	（zen2han,（キャラ番号））0
+＄キャラ番号＝（キャラ番号）＋２
+\![change,ghost,caramelldansen]
+
+＊キャラ追加処理3
+＄キャラクター（zen2han,（キャラ番号））	（キャラ名仮）
+（nop,（copy,..\..\..\0.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））0.png）
+（copy,..\..\..\1.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））1.png）
+（copy,..\..\..\2.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））2.png）
+（copy,..\..\..\3.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））3.png）
+（copy,..\..\..\4.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））4.png）
+（copy,..\..\..\5.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））5.png）
+（copy,..\..\..\6.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））6.png）
+（copy,..\..\..\7.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））7.png）
+（copy,..\..\..\8.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））8.png）
+（copy,..\..\..\9.png,..\..\..\shell\master\surface（zen2han,（キャラ番号））9.png）
+（copy,..\..\..\10.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）0.png）
+（copy,..\..\..\11.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）1.png）
+（copy,..\..\..\12.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）2.png）
+（copy,..\..\..\13.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）3.png）
+（copy,..\..\..\14.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）4.png）
+（copy,..\..\..\15.png,..\..\..\shell\master\surface（calc,（zen2han,（キャラ番号））+1）5.png）
+（delete,..\..\..\0.png）
+（delete,..\..\..\1.png）
+（delete,..\..\..\2.png）
+（delete,..\..\..\3.png）
+（delete,..\..\..\4.png）
+（delete,..\..\..\5.png）
+（delete,..\..\..\6.png）
+（delete,..\..\..\7.png）
+（delete,..\..\..\8.png）
+（delete,..\..\..\9.png）
+（delete,..\..\..\10.png）
+（delete,..\..\..\11.png）
+（delete,..\..\..\12.png）
+（delete,..\..\..\13.png）
+（delete,..\..\..\14.png）
+（delete,..\..\..\15.png）
+（edittext,surfaces.txt,Open））
+＄引数区切り削除	,
+＄引数区切り追加	■
+（nop■（edittext■surfaces.txt■Append■-1■surface（zen2han■（キャラ番号））0\n
+{\n
+animation0.interval,always\n
+animation0.pattern0,base,（zen2han■（キャラ番号））0,90,0,0\n
+animation0.pattern1,base,（zen2han■（キャラ番号））1,90,0,0\n
+animation0.pattern2,base,（zen2han■（キャラ番号））2,90,0,0\n
+animation0.pattern3,base,（zen2han■（キャラ番号））3,90,0,0\n
+animation0.pattern4,base,（zen2han■（キャラ番号））4,90,0,0\n
+animation0.pattern5,base,（zen2han■（キャラ番号））5,90,0,0\n
+animation0.pattern6,base,（zen2han■（キャラ番号））6,90,0,0\n
+animation0.pattern7,base,（zen2han■（キャラ番号））7,90,0,0\n
+animation0.pattern0,base,（zen2han■（キャラ番号））8,90,0,0\n
+animation0.pattern1,base,（zen2han■（キャラ番号））9,90,0,0\n
+animation0.pattern2,base,（calc■（zen2han■（キャラ番号））+1）0,90,0,0\n
+animation0.pattern3,base,（calc■（zen2han■（キャラ番号））+1）1,90,0,0\n
+animation0.pattern4,base,（calc■（zen2han■（キャラ番号））+1）2,90,0,0\n
+animation0.pattern5,base,（calc■（zen2han■（キャラ番号））+1）3,90,0,0\n
+animation0.pattern6,base,（calc■（zen2han■（キャラ番号））+1）4,90,0,0\n
+animation0.pattern7,base,（calc■（zen2han■（キャラ番号））+1）5,90,0,0\n
+
+}）
+（edittext■surfaces.txt■Save）
+（edittext■surfaces.txt■Close））
+＄引数区切り削除	■
+＄引数区切り追加	,
+（nop,（delete,..\..\..\shell\master\surfaces.txt）
+（copy,..\surfaces.txt,..\..\..\shell\master\surfaces.txt））
+＄デフォルトサーフェス（zen2han,（キャラ番号））	（zen2han,（キャラ番号））0
+＄キャラ番号＝（キャラ番号）＋２
+\![change,ghost,caramelldansen]
